@@ -15,9 +15,9 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="logo2.svg"
-   inkscape:export-filename="/home/steve/Documents/Projects/ccad-site/logo2.png"
-   inkscape:export-xdpi="926.07001"
-   inkscape:export-ydpi="926.07001">
+   inkscape:export-filename="/home/steve/Documents/Projects/thawamerica/logo2.png"
+   inkscape:export-xdpi="926.74921"
+   inkscape:export-ydpi="926.74921">
   <defs
      id="defs2994" />
   <sodipodi:namedview
@@ -27,10 +27,10 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.672882"
-     inkscape:cx="41.204626"
-     inkscape:cy="17.468773"
-     inkscape:current-layer="layer2"
+     inkscape:zoom="127.88102"
+     inkscape:cx="11.05291"
+     inkscape:cy="24.047455"
+     inkscape:current-layer="layer3"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
@@ -56,7 +56,21 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="blue"
-     transform="translate(0,-18)" />
+     transform="translate(0,-18)">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
+       d="m 21.042998,19.013978 7.725932,-0.0391 3.237384,10.392473 -7.913606,-0.0391 z"
+       id="path3764"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       transform="translate(0,18)" />
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       d="m 7.9609375,36.921765 -3.25,10.468983 6.8632815,0.043 -0.0078,-0.375152 C 12.723103,43.544114 14.53064,36.930029 14.53064,36.930029 z"
+       id="path2992"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -64,7 +78,7 @@
      transform="translate(0,-18)">
     <path
        style="fill:#bf0000;fill-opacity:1;fill-rule:evenodd;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 7.9343537,37.032292 2.8527813,-9.318109 2.459024,-7.503581 1.131652,-1.130444 3.589964,-0.30465 3.667806,0.06517 0.961196,0.633676 0.882126,0.949959 5.277653,16.604627 -7.848324,0.0119 -3.176133,-11.71359 -3.091249,11.713944 z"
+       d="m 7.9343537,37.032292 2.8527813,-9.318109 2.459024,-7.503581 1.131652,-1.130444 3.589964,-0.30465 3.667806,0.06517 0.961196,0.633676 0.882126,0.949959 5.277653,16.604627 -7.848324,0.0119 -3.176133,-11.71359 -3.208546,11.713944 z"
        id="path3019"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccccccc" />
