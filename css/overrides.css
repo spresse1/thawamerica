@@ -1,8 +1,41 @@
 body {
 	font-size: 2em;
 	line-height: 1.5em;
+	padding-bottom: 60px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 2em;
+}
+
+.navbar-default {
+	background-color: #0000bc;
+	border-color: #ccc;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #ccc;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #ccc;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #3333ef;
+	color: white;
+}
+
+table, th, td {
+	vertical-align: top;
+	padding: 7px;
+	border-bottom: 1px solid black;
 }
