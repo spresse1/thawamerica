@@ -8,7 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 2em;
 }
 
-.navbar-default {
+.navbar-default,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
 	background-color: #0000bc;
 	border-color: #ccc;
 }
@@ -38,4 +40,38 @@ table, th, td {
 	vertical-align: top;
 	padding: 7px;
 	border-bottom: 1px solid black;
+}
+
+ul.navbar-right {
+	margin-top: 7px;
+}
+
+ul.navbar-right li {
+	display: inline-block;
+}
+
+ul.navbar-right li:first-child a {
+	margin-left: 15px;
+}
+
+ul.navbar-right li:last-child a {
+	margin-right: 15px;
+}
+
+.btn-medium{
+	color:#fff;
+	background-color:#14c767;
+	border-color:rgba(0,0,0,0.2)
+}
+
+.btn-envelope{
+	color:#fff;
+	background-color:#bf0000;
+	border-color:rgba(0,0,0,0.2)
+}
+
+.btn-rss{
+	color:#fff;
+	background-color:#f88017;
+	border-color:rgba(0,0,0,0.2)
 }
