@@ -22,6 +22,8 @@ TAG_SAVE_AS = 'blog/tag/{slug}.html'
 AUTHOR_URL='blog/author/{slug}.html'
 AUTHOR_SAVE_AS='blog/author/{slug}.html'
 ARCHIVES_SAVE_AS = 'blog/archives.html'
+YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
 AUTHORS_SAVE_AS = 'blog/authors.html'
 CATEGORIES_SAVE_AS = 'blog/categories.html'
 TAGS_SAVE_AS = 'blog/tags.html'
@@ -51,4 +53,6 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
+
+SLUGIFY_SOURCE = 'basename'
