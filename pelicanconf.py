@@ -11,7 +11,7 @@ PATH = 'content'
 PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 PAGE_PATHS = ['']
 ARTICLE_PATHS = ['blog']
-STATIC_PATHS = ['static']
+STATIC_PATHS = ['static', 'press']
 
 ARTICLE_URL = 'blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
