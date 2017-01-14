@@ -90,7 +90,7 @@
     <script>
       function showMailingPopUp() {
         require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"e142cf224a27d483acb85a738","lid":"e2e7555d6d"}) })
-        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        document.cookie = "MCEvilPopupClosed=yes; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
       };
 
       document.getElementById("mailchimp-popup").onclick = function() {showMailingPopUp();return false};
