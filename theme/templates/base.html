@@ -86,7 +86,7 @@
               {% endfor %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="btn btn-social-icon btn-rss" rel="alternate" href="https://thawamerica.org/rss.xml"><span class="fa fa-rss"></span></a></li>
+              <li><a class="btn btn-social-icon btn-rss" rel="alternate" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><span class="fa fa-rss"></span></a></li>
               <li><a class="btn btn-social-icon btn-envelope" href="http://eepurl.com/cxwSzj" id="mailchimp-popup" target="_blank"><span class="fa fa-envelope"></span></a></li>
               <li><a class="btn btn-social-icon btn-twitter" href="https://twitter.com/ThawAmerica" target="_blank"><span class="fa fa-twitter"></span></a></li>
               <li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/thawamerica" target="_blank"><span class="fa fa-facebook"></span></a></li>
@@ -97,14 +97,10 @@
         </div>
       </nav>
     </div>
-    <div class="container" itemscope itemtype="http://schema.org/Article">
-      <h1 itemprop="name"></h1>
-        <article itemprop="articleBody">
-          <!-- Content -->
-          {% block content %}
-          {% endblock %}
-        </article>
-      </div>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
