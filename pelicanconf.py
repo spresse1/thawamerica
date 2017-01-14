@@ -8,14 +8,15 @@ SITEURL = 'https://thawamerica.org'
 THEME='theme'
 
 PATH = 'content'
+PATH_METADATA= '(?P<path_no_ext>.*)\..*'
 PAGE_PATHS = ['']
 ARTICLE_PATHS = ['blog']
 STATIC_PATHS = ['static']
 
 ARTICLE_URL = 'blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
+PAGE_SAVE_AS= '{path_no_ext}.html'
+PAGE_URL= '{path_no_ext}.html'
 CATEGORY_URL = 'blog/category/{slug}.html'
 CATEGORY_SAVE_AS = 'blog/category/{slug}.html'
 TAG_URL = 'blog/tag/{slug}.html'
