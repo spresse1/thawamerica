@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Steven Presser'
 SITENAME = u'Thaw America'
 SITEURL = 'https://thawamerica.org'
+THEME='theme'
 
 PATH = 'content'
 PAGE_PATHS = ['']
