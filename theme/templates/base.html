@@ -81,7 +81,8 @@
             <ul class="nav navbar-nav">
               {% for p in pages %}
                 {% if p.metadata['menutitle'] is defined %}
-                  <li {% if p == page %} class="active"{% endif %}><a href="/{{ p.url|replace("index.html","") }}">{{ p.metadata['menutitle'] }}</a></li>
+                  {% set sect = p.url.split("/") %}
+                  <li {% if (sect[0] in page|string and sect[0] != 'index.html' ) or p == page %} class="active"{% endif %}><a href="/{{ p.url|replace("index.html","") }}">{{ p.metadata['menutitle'] }}</a></li>
                 {% endif %}
               {% endfor %}
             </ul>
