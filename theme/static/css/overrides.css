@@ -75,3 +75,7 @@ ul.navbar-right li:last-child a {
 	background-color:#f88017;
 	border-color:rgba(0,0,0,0.2)
 }
+
+div.entry-content p img {
+	max-width: 100%;
+}
