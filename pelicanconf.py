@@ -64,3 +64,19 @@ NAVBAR_ITEMS = (( "Home", "/", "/index.html" ),
                 ( "Press Resources", "/press", "/press"),
                 ( "Contact", "/contact", "/contact"),
                )
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['sitemap']
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 1.0,
+        'pages': 0.8,
+        'indexes': 0.2,
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'pages': 'weekly',
+        'indexes': 'weekly',
+    }
+}
