@@ -4,4 +4,3 @@ lib/
 local/
 output/
 *.pyc
-Makefile
