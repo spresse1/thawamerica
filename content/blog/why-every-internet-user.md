@@ -8,13 +8,13 @@ Recently, I introduced FISCR 16-01, including the effects of the decision and ho
 
 ##FISCR 16-01 Applies to the Internet
 
-Pen Registers, the legal tool at issue in this case, are all about so-called DRAS (dialing, routing, addressing and signaling) information. In telephony, this is generally agreed to be the digits a user dials &ndash; when they're dialed in order to connect one telephone to another.
+Pen Registers, the legal tool at issue in this case, are all about so-called DRAS (dialing, routing, addressing and signaling) information - more commonly known as telephone metadata. In telephony, this is generally agreed to be the digits a user dials &ndash; when they're dialed in order to connect one telephone to another.
 
 Enter the internet.
 
 The internet is a wealth of routing and signaling information. The model usually used to represent this is the [TCP/IP model](https://tools.ietf.org/html/rfc1122). Unfortunately, it's a technical model and covers way too much detail for what we need here, so we'll be using a simplified version.
 
-In order to understand just how much information there is in internet DRAS, let's take a look at how much we can pull out of a typical web request &ndash; one page, not including any images, scripts or other dynamic content.
+In order to understand just how much information there is in internet metadata, let's take a look at how much we can pull out of a typical web request &ndash; one page, not including any images, scripts or other dynamic content.
 
 A typical request might look like:
 
@@ -55,9 +55,9 @@ But wait, it gets worse. Sometimes the HTTP request line contains data the user 
 
     GET /?q=FISCR HTTP/1.1
 
-So not only can DRAS be used to determine what pages you're viewing, it can show what you're searching for and almost any other input you give any web page.
+So not only can metadata be used to determine what pages you're viewing, it can show what you're searching for and almost any other input you give any web page.
 
-To make this even more terrible? I've been using only the public and generally-accepted limits on what is DRAS. Given how we've seen the intelligence community [twist the definition of collect (C2.2.1, page 15)](https://fas.org/irp/doddir/dod/d5240_1_r.pdf) and given FISCR 16-01's broadening of the collection of content in order to get at DRAS, it may be permissible to collect the bodies of webpages as part of a pen register. After all, they do often contain links, which are addressing information.
+To make this even more terrible? I've been using only the public and generally-accepted limits on what is metadata. Given how we've seen the intelligence community [twist the definition of collect (C2.2.1, page 15)](https://fas.org/irp/doddir/dod/d5240_1_r.pdf) and given FISCR 16-01's broadening of the collection of content in order to get at metadata, it may be permissible to collect the bodies of webpages as part of a pen register. After all, they do often contain links, which are addressing information.
 
 In summary, FISCR 16-01 is terrifying in the amount of information it allows the government to collect with a effectively-nonexistent level of judicial oversight.
 
