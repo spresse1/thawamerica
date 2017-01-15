@@ -87,11 +87,9 @@
           <!-- Collection of nav links and other content for toggling -->
           <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              {% for p in pages %}
-                {% if p.metadata['menutitle'] is defined %}
-                  {% set sect = p.url.split("/") %}
-                  <li {% if (sect[0] in page|string and sect[0] != 'index.html' ) or p == page %} class="active"{% endif %}><a href="/{{ p.url|replace("index.html","") }}">{{ p.metadata['menutitle'] }}</a></li>
-                {% endif %}
+              {% for text, link, match in NAVBAR_ITEMS %}
+                {% set spage = page|string %}
+                <li {% if spage.startswith(PATH + match) or (not page is defined and match == "/blog" ) %} class="active"{% endif %}><a href="{{ link }}">{{url}}{{ text }}</a></li>
               {% endfor %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
