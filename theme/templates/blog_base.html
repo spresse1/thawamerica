@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-md-8" id="blog-page-content">
+<section id="content">
+    {% block blog_content %}{% endblock %}
+</section><!-- /#content -->
+</div>
+<div class="col-md-4">
+    <a href="/blog"><h3>Most recent articles</h3></a>
+    {% for article in articles[:5] %}
+        <div><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    {% endfor %}
+    </div>
+    <hr />
+    {% if categories %}
+        <h3><a href="/blog/categories.html">Post Categories</a></h3>
+        {% for cat, null in categories %}
+            <div><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+        {% endfor %}
+        <hr />
+    {% endif %}
+    <h3><a href="/blog/archives.html">Archives</a></h3>
+</div>
+{% endblock content %}
