@@ -2,6 +2,7 @@ Title: Why we Fight for your Privacy
 Date: 2016-12-24 00:00
 Slug: why-we-fight-your-privacy
 Authors: Steven Presser
+Category: Articles
 
 The last 15 years have seen an unprecedented expansion of surveillance, mostly via massive electronic monitoring. This has happened behind closed doors and without the consent of the American people. The intelligence agencies have repeatedly gone way beyond the scope of the already-questionably legal powers afforded to them and lied to (or at least mislead) congressional investigation panels. See: [How to Tell When the N.S.A. is lying](http://www.newyorker.com/news/amy-davidson/how-to-tell-when-the-n-s-a-is-lying) and [The Government's Word Games When Talking About NSA Domestic Spying](https://www.eff.org/nsa-spying/wordgames) among many other articles. Few, if any of these spy programs have ever come before a public court. The single exception being [a case before the District Court in Boston at the end of 2016](http://www.bostonherald.com/news/local_coverage/2016/12/boston_judge_goes_deep_into_nations_top_secret_court).
 
