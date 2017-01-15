@@ -79,3 +79,15 @@ ul.navbar-right li:last-child a {
 div.entry-content p img {
 	max-width: 100%;
 }
+
+div#blog-page-content {
+	border-right: 1px solid #eee;
+}
+
+div.fb-like {
+	top: -8px;
+}
+
+div.article-social-buttons-left {
+	text-align: right;
+}
