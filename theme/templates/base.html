@@ -59,6 +59,14 @@
         </script>
         {% endif %}
         
+        {% block opengraph %}
+        <meta property="og:site_name" content="{{ SITENAME }}" />
+        <meta property="og:type" content="website" />
+        {% block opengraph_image %}
+        <meta name="image" content="https://thawamerica.org/static/logoSmall.png" />
+        {% endblock %}
+        {% endblock %}
+        
         {% endblock head %}
 </head>
 

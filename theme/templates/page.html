@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }} - Thaw America{%endblock%}
+{% block opengraph %}
+{{ super() }}
+        <meta  property="og:title" content="{{ page.title }}" />
+        <meta property="og:url" content="{{ page.url }}" />
+        <meta property="og:description" content="{{ page.summary }}" />
+{% endblock %}
 {% block content %}
     {{ page.content }}
 {% endblock %}
