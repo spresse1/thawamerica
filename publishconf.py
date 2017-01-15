@@ -13,9 +13,9 @@ from pelicanconf import *
 SITEURL = 'https://thawamerica.org'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ATOM = 'feeds/atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-FEED_ALL_RSS = 'feeds/all.rss.xml'
+FEED_RSS = 'feeds/rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 DELETE_OUTPUT_DIRECTORY = True

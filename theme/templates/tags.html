@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "blog_base.html" %}
 
 {% block title %}{{ SITENAME }} - Tags{% endblock %}
 
-{% block content %}
+{% block blog_content %}
     <h1>Tags for {{ SITENAME }}</h1>
     {%- for tag, articles in tags|sort %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>

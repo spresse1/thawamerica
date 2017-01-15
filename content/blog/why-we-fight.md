@@ -2,6 +2,7 @@ Title: Why we Fight for your Privacy
 Date: 2016-12-24 00:00
 Slug: why-we-fight-your-privacy
 Authors: Steven Presser
+Category: Articles
 
 The last 15 years have seen an unprecedented expansion of surveillance, mostly via massive electronic monitoring. This has happened behind closed doors and without the consent of the American people. The intelligence agencies have repeatedly gone way beyond the scope of the already-questionably legal powers afforded to them and lied to (or at least mislead) congressional investigation panels. See: [How to Tell When the N.S.A. is lying](http://www.newyorker.com/news/amy-davidson/how-to-tell-when-the-n-s-a-is-lying) and [The Government's Word Games When Talking About NSA Domestic Spying](https://www.eff.org/nsa-spying/wordgames) among many other articles. Few, if any of these spy programs have ever come before a public court. The single exception being [a case before the District Court in Boston at the end of 2016](http://www.bostonherald.com/news/local_coverage/2016/12/boston_judge_goes_deep_into_nations_top_secret_court).
 
@@ -24,15 +25,15 @@ The decision that we are challenging is a "certified question of law" from FICOR
 
 ### Technical
 
-Whenever a button on a telephone is pressed, a specific pair of tones is sent. These are called [DTMF (Dual-Tone Multi-Frequency)](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) tones and have been in use in the telephone network since the late 1960s. DTMF can be used to convey DRAS (Dialing, Routing, Addressing and Signaling) information (phone numbers), as well as call “contents” - anything that isn't DRAS, like passwords, pins, credit card numbers, etc. When used to convey DRAS, DTMF is not protected information. After all, the user is voluntarily sharing that information with someone (the telephone company), without expectation of privacy. However, DTMF is protected by the fourth amendment when used to convey content.
+Whenever a button on a telephone is pressed, a specific pair of tones is sent. These are called [DTMF (Dual-Tone Multi-Frequency)](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) tones and have been in use in the telephone network since the late 1960s. DTMF can be used to convey DRAS (Dialing, Routing, Addressing and Signaling) information (also known as telephone metadata), as well as call “contents” - anything that isn't telephone metadata, like passwords, pins, credit card numbers, etc. When used to convey telephone metadata, DTMF is not protected information. After all, the user is voluntarily sharing that information with someone (the telephone company), without expectation of privacy. However, DTMF is protected by the fourth amendment when used to convey content.
 
 Normally, a very clear line is drawn between content and non-content. This is often called “The Fourth Amendment Veil”. Usually the separation provided by the veil is very clear. For example, in most calls DTMF is only used until the call connects – then everything is content.
 
-However, our intelligence agencies are worried they might miss something if they don't capture the DRAS that is embedded in calls. The argument that they are allowed this information is likely valid (so long as no protected information is captured), but the decision certifying this is based on legal fallacy and technical inaccuracy. It is this decision we are challenging.
+However, our intelligence agencies are worried they might miss something if they don't capture the telephone metadata that is embedded in calls. The argument that they are allowed this information is likely valid (so long as no protected information is captured), but the decision certifying this is based on legal fallacy and technical inaccuracy. It is this decision we are challenging.
 
 ## FISCR's Decision
 
-The decision allows pen registers to be used to capture and store the entirety of calls – content and all. The intelligence agencies contend that there is no way to separate out the dialed digits that are DRAS from those that are content in real time. They say that they therefore will need to collect the entire entire call and sort out what is content and what isn't at an unspecified later date.
+The decision allows pen registers to be used to capture and store the entirety of calls – content and all. The intelligence agencies contend that there is no way to separate out the dialed digits that are telephone metadata from those that are content in real time. They say that they therefore will need to collect the entire entire call and sort out what is content and what isn't at an unspecified later date.
 
 The court concurred with the intelligence agencies and used two reasons to justify the decision – a foreign intelligence exception to the 4th amendment and a unique interpretation of a “savings clause” as allowing the capture (but not use) of protected information.
 
@@ -42,7 +43,7 @@ Second, the savings clause. The FICOR decision says that the collection of call 
 
 Additionally, the law requires that “minimization procedures” be used to minimize the inadvertent capture of unrelated data. FICOR did not include any requirement for minimization whatsoever, opting instead to give full authority for the intelligence agencies to record and keep the entirety of all calls.
 
-FICOR didn't even get the technical part of this correct. It is eminently possible to separate content digits from DRAS digits in real time. In order to prove this, I wrote a program called CCAD – the Call Contents Automatic Differentiator ([source code](https://github.com/spresse1/CCAD) and [technical paper](/press/2016-11-21/ccad.pdf)) which can perform this separation in better than real time. CCAD is a proof of concept program that uses no new or unique algorithm (in fact, the core algorithm was first published in 1958 – making it almost twice as old as I am) to identify valid phone numbers in the US and Canada.
+FICOR didn't even get the technical part of this correct. It is eminently possible to separate content digits from telephone metadata digits in real time. In order to prove this, I wrote a program called CCAD – the Call Contents Automatic Differentiator ([source code](https://github.com/spresse1/CCAD) and [technical paper](/press/2016-11-21/ccad.pdf)) which can perform this separation in better than real time. CCAD is a proof of concept program that uses no new or unique algorithm (in fact, the core algorithm was first published in 1958 – making it almost twice as old as I am) to identify valid phone numbers in the US and Canada.
 
 ## CCAD
 
@@ -57,11 +58,11 @@ After a signal stream is generated (though there is no reason it couldn't be don
 
 Despite it's rudimentary nature, CCAD operates quite well. Tested on over 400 YEARS of computer-generated test audio, it operates with an expected accuracy of 99.4% and a worst-case accuracy of 98.3%. This could almost certainly be improved with better algorithms. Many of the errors were around bad results from the exceedingly basic voice detection algorithm used.
 
-Still, there is much room for improvement. First, many of the calls containing DRAS will be to the same destination numbers. The accuracy of number identification could be significantly improved by cataloging those destination numbers which ask users for DRAS and those that don't. In this way it would be trivial to categorize the great majority of calls as either potentially containing DRAS or not containing DRAS.
+Still, there is much room for improvement. First, many of the calls containing telephone metadata will be to the same destination numbers. The accuracy of number identification could be significantly improved by cataloging those destination numbers which ask users for telephone metadata and those that don't. In this way it would be trivial to categorize the great majority of calls as either potentially containing telephone metadata or not containing telephone metadata.
 
 We can also improve how accurately we can determine if tones consist of a phone number or not. Where the existing CCAD implementation examines only the number of digits, we could also measure the time between digits. Humans tend to remember (and therefore dial) numbers in small groups. We even write the numbers this way. For example, credit card numbers are written as four groups of four, while domestic phone numbers are written in groups of three, then three, then four digits. Humans memorize numbers in this format or, if looking at a written number, tend to read and dial one chunk, then read and dial the next. This means that the dialed digits will have longer pauses between them when switching between groups. In turn, this can be used to correlate a dialed sequence with a format and determine if the number dialed is a phone number.
 
-Finally, the differentiation between DRAS and not-DRAS could be even further improved by using voice transcription software to determine what information the user is being asked for.
+Finally, the differentiation between telephone metadata and content could be even further improved by using voice transcription software to determine what information the user is being asked for.
 
 ## How Did FISCR get it Wrong?
 
@@ -71,13 +72,13 @@ CCAD takes this one step further. Rather than have humans go through and isolate
 
 At a minimum, the court should have ordered the use of a minimization procedure similar to CCAD and denied the intelligence agencies permission to store calls. Put simply, they don't need to store them or keep any information other than the symbolic representation of the dialed tones. Any additional information they keep is overreach and violates the fourth amendment.
 
-CCAD proves, using only technology older than me, that separating dialed tones from a call and determining if they are DRAS is not only a reasonable thing to do, but can be done in better than real-time. It is further worth noting that I wrote this in six weeks of nights and weekends. While I'm a competent developer, digital signals processing is not an area where I have any education and I spent a lot of time educating myself.
+CCAD proves, using only technology older than me, that separating dialed tones from a call and determining if they are telephone metadata is not only a reasonable thing to do, but can be done in better than real-time. It is further worth noting that I wrote this in six weeks of nights and weekends. While I'm a competent developer, digital signals processing is not an area where I have any education and I spent a lot of time educating myself.
 
 This raises an important question: If I, a computer scientist with no background in digital signals processing or telephony software, can throw together a solution in a month, why did the court find that it was impossible? The most charitable interpretation of this is a simple miscommunication somewhere between the technical experts and the court. However, it stretches credibility to believe that this is the case. Despite having at least three people to go through, it seems unlikely that even “it's hard” would morph into “it's impossible”. (And this certainly isn't a hard problem).
 
 The next option is a deliberate, deceptive truth. This seems more the style of our intelligence agencies. In the past, we've seen the NSA tell congress things that are technically true (“We don't do that type of monitoring under that section of law”) but which are intended to imply something different than the truth (for example, to imply that the NSA doesn't collect that data). If we had access to the transcript for this case, this deception might take the form:
 
-    JUDGE: So you're saying you cannot tell the difference between digits dialed as DRAS and those that are content?
+    JUDGE: So you're saying you cannot tell the difference between digits dialed as telephone metadata and those that are content?
 
     GOVERNMENT: No. There is no technical difference between a digit dialed as part of a phone number and one dialed as part of the content.
 
