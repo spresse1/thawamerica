@@ -1,8 +1,9 @@
-Title: Why Every Internet user should care about FISCR 16-01
+Title: Why every internet user should care about FISCR 16-01
 Date: 2016-12-29 00:00:00 GMT
 Slug: why-every-internet-user
 Authors: Steven Presser
 Category: Articles
+Summary: Recently, I introduced FISCR 16-01, including the effects of the decision and how the court got it massively wrong. What I didn't cover was the broader applicability of the decision and why everyone should care. So lets do that now.
 
 Recently, I introduced FISCR 16-01, including the effects of the decision and how the court got it massively wrong. What I didn't cover was the broader applicability of the decision and why everyone should care. So lets do that now.
 
