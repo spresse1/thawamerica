@@ -25,7 +25,7 @@
   <header>
     <h2 class="entry-title" itemprop="name">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}" itemprop="headline">{{ article.title }}</a></h2>
+         title="Permalink to {{ article.title|striptags }}"  itemprop="url"><span itemprop="headline">{{ article.title }}</span></a></h2>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
   </header>
@@ -40,9 +40,9 @@
     </time>
     {% endif %}
     {% if article.authors %}
-    <address class="vcard author">
+    <address class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">
       By {% for author in article.authors %}
-          <a class="url fn" href="{{ SITEURL }}/{{ author.url }}"><span  itemprop="author">{{ author }}</span></a>
+          <a class="url fn" href="{{ SITEURL }}/{{ author.url }}"><span itemprop="name">{{ author }}</span></a>
         {% endfor %}
     </address>
     {% endif %}
