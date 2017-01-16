@@ -61,7 +61,7 @@ SLUGIFY_SOURCE = 'basename'
 
 NAVBAR_ITEMS = (( "Home", "/", "/index.html" ),
                 ( "Blog", "/blog", "/blog"),
-                ( "Press Releases", "/press", "/press"),
+                ( "Official Communications", "/press", "/press"),
                 ( "Contact", "/contact", "/contact"),
                )
 
