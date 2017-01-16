@@ -14,8 +14,9 @@
                     {% for author in article.authors %}
                         <a class="url fn" href="{{ SITEURL }}/{{ author.url }}" itemprop="name">{{ author }}</a>
                     {% endfor %}
-                    </address>
+                     in  <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category.name }}</a>
                 </footer><!-- /.post-info -->
+                    </address>
                 <div class="entry-content" itemprop="articleBody"> {{ article.summary }} </div><!-- /.entry-content -->
                 <div><a href="{{ SITEURL }}/{{ article.url }}">[ Continue reading... ]</a></div>
         </article>
