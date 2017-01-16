@@ -3,22 +3,24 @@
 {% block content_title %}
 <h2>All articles</h2>
 {% endblock %}
+<div itemscope itemtype="http://schema.org/Blog">
 {% for article in articles_page.object_list %}
     <div class="article_entry">
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+        <article class="hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+                <header><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}" itemprop="url"><h2 class="entry-title" itemprop="name">{{ article.title }}</h2></a></header>
                 <footer class="post-info">
-                    <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
-                    <address class="vcard author">By
+                    <time class="published" datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
+                    <address class="vcard author" itemprop="author" itemscope itemtype="http://schema.org/Person">By
                     {% for author in article.authors %}
-                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}" itemprop="name">{{ author }}</a>
                     {% endfor %}
                     </address>
                 </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-                <div><a href="{{ SITEURL }}/{{ article.url }}">[ Continue reading... ]</a>
+                <div class="entry-content" itemprop="articleBody"> {{ article.summary }} </div><!-- /.entry-content -->
+                <div><a href="{{ SITEURL }}/{{ article.url }}">[ Continue reading... ]</a></div>
         </article>
     </div>
     <hr />
 {% endfor %}
+</div>
 {% endblock %}

@@ -8,14 +8,13 @@
 <div class="col-md-4">
     <a href="/blog"><h3>Most recent articles</h3></a>
     {% for article in articles[:5] %}
-        <div><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        <div><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
     {% endfor %}
-    </div>
     <hr />
     {% if categories %}
         <h3><a href="/blog/categories.html">Post Categories</a></h3>
         {% for cat, null in categories %}
-            <div><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+            <div><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></div>
         {% endfor %}
         <hr />
     {% endif %}
