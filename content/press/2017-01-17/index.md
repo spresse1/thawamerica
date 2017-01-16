@@ -1,0 +1,33 @@
+Slug: index
+Title: Supreme Court Clerk Illegally Decides Constitutional Law
+
+##Supreme Court Clerk Illegally Decides Constitutional Law
+###Clerk Stonewalls FISA Telephone Metadata Appeal
+
+*LYNNFIELD, MA – January 12, 2017* – Walsh & Walsh LLP is requesting Justice Breyer reverse an illegal rejection by the Supreme Court Clerk's Office.  In a letter dated December 23, 2016, the Supreme Court Clerk's Office rejected Walsh & Walsh's petition for certiorari (review) in FISA Court of Review (FISCR) case 16-01.
+
+"The Clerk's letter is absurd," said Michael Walsh, "Any first year law student should know standing is a question of constitutional law and therefore can only be decided by the court.  In returning our petition for lack of standing, the clerk has usurped the power of the court and declared itself the ultimate arbiter of law in the United States.  It is unconstitutional, unconscionable, illegal, and erroneous".
+
+The request to Justice Breyer is filed under Supreme Court Rule 22, which allows direct petition of a justice if the justice is able to grant relief.  Justice Breyer could do so by ordering the clerk to docket Walsh & Walsh's petition for certiorari, which would then be reviewed by the full court.
+
+The case in question is FISCR 16-01, which focuses on pen registers.  At issue is whether or not pen registers can be used to capture metadata embedded in the body of a call.  FISCR allowed the use of pen registers to record the entirety of a call so that metadata could be pulled out later.  All of the federal circuit courts previously found collecting embedded metadata is illegal and would capture the call's content, which is protected by the Fourth Amendment right to privacy.
+
+This case is not merely a test of pen registers, but a test of the FISA Amendment Act.  In addition to adding amicus requirements to selected FISA proceedings, the FISA Amendment Act added a path for appeal from the FISA Court of Review to the US Supreme Court.  In the Supreme Court's opinion in ACLU v. Clapper, the Court expressed a willingness to examine FISA decisions, as long as they came through the FISA courts first.
+
+Thaw America is an unincorporated organization dedicated to overturning FISCR 16-01.  It was founded by Messrs. John & Michael Walsh and Steven Presser.
+
+Contact:
+Steven Presser<br />
+[spresser@thawamerica.org](mailto:spresser@thawamerica.org)<br />
+[thawamerica.org](thawamerica.org)<br />
+PO Box 9<br />
+Lynnfield, MA<br />
+01940<br />
+Ph: [+1 678-383-7117](tel:+16783837117)
+
+\###
+
+##Related Materials
+[PDF Release](release.pdf)<br />
+[Clerk's Letter](clerk.pdf)<br />
+[Walsh & Walsh Letter](walsh_walsh.pdf)
