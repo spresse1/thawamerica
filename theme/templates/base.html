@@ -70,13 +70,13 @@
         {% endblock %}
         <meta name="image" content="{% block opengraph_image %}https://thawamerica.org/static/logoSmall.png{% endblock %}" />
         {% block twittermeta %}
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@thawamerica">
         <meta name="twitter:creator" content="@thawamerica">
         <meta name="twitter:title" content="{{ self.title() }}">
         {% endblock %}
         {% block twitterimage %}
-        <meta name="twitter:image" content="{% block twitter_image %}https://thawamerica.org/static/logoTwitter.png{% endblock %}">
+        <meta name="twitter:image" content="{% block twitter_image %}https://thawamerica.org/static/logoSquare.png{% endblock %}">
         {% endblock %}
         
         {% endblock head %}
