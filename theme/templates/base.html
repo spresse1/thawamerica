@@ -66,9 +66,17 @@
         {% block opengraph %}
         <meta property="og:site_name" content="{{ SITENAME }}" />
         <meta property="og:type" content="website" />
-        {% block opengraph_image %}
-        <meta name="image" content="https://thawamerica.org/static/logoSmall.png" />
+        <meta property="og:title" content="{{ self.title() }}" />
         {% endblock %}
+        <meta name="image" content="{% block opengraph_image %}https://thawamerica.org/static/logoSmall.png{% endblock %}" />
+        {% block twittermeta %}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@thawamerica">
+        <meta name="twitter:creator" content="@thawamerica">
+        <meta name="twitter:title" content="{{ self.title() }}">
+        {% endblock %}
+        {% block twitterimage %}
+        <meta name="twitter:image" content="{{ self.opengraph_image() }}">
         {% endblock %}
         
         {% endblock head %}
