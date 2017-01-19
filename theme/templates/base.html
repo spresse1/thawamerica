@@ -76,7 +76,7 @@
         <meta name="twitter:title" content="{{ self.title() }}">
         {% endblock %}
         {% block twitterimage %}
-        <meta name="twitter:image" content="{{ self.opengraph_image() }}">
+        <meta name="twitter:image" content="{% block twitter_image %}https://thawamerica.org/static/logoTwitter.png{% endblock %}">
         {% endblock %}
         
         {% endblock head %}
