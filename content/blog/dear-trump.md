@@ -17,7 +17,7 @@ Today, I watched and listened as you were sworn in as the 45th president of thes
 
 > But we are transferring power from Washington, D.C., and giving it back to you, the people.
 
-Mr. Trump, I want to talk to you about mass surveillance.  Power cannot return to the people while the people fear their government's ability to unfairly interfere with their lives.  This is why it is so important - so critical - that you curtail the surveillance state.
+Mr. Trump, I want to talk to you about mass surveillance.  Power cannot return to the people while the people fear their government's ability to unfairly interfere with their lives.  This is why it is so important - so critical - that you curtail mass surveillance.
 
 The people cannot truly hold power when they're afraid that criticizing their government or speaking up about controversial issues might result in them being investigated or dragged into court over some minor infraction.  The people need to be able to trust that the safeguards of the Constitution are working, that government interference only happens when there is a good reason.
 
