@@ -19,7 +19,7 @@ Thaw America is an unincorporated organization dedicated to overturning FISCR 16
 Contact:
 Steven Presser<br />
 [spresser@thawamerica.org](mailto:spresser@thawamerica.org)<br />
-[thawamerica.org](thawamerica.org)<br />
+[thawamerica.org](https://thawamerica.org)<br />
 PO Box 9<br />
 Lynnfield, MA<br />
 01940<br />
