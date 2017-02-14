@@ -1,10 +1,11 @@
 Title: FAQ
+Summary: Frequently asked questions about Thaw America, a non-partisan group dedicated to changing the law around mass surveillance.  We want to maximize First and Fourth Amendment rights while maintaining or improving the institutions that keep us safe.
 
 #Frequently Asked Questions
 
 ###What is Thaw America?
 
-A non-partisan group dedicated to changing the law around mass surveillance.  We want to maximize First and Fourth Amendment rights while maintaining or improving the institutions that keep us safe.
+Thaw America is a non-partisan group dedicated to changing the law around mass surveillance.  We want to maximize First and Fourth Amendment rights while maintaining or improving the institutions that keep us safe.
 
 ###Won't that hurt law enforcement's ability to protect us?
 
