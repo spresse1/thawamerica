@@ -17,7 +17,7 @@ do
         virtualenv .
         . bin/activate
         pip install -r requirements.txt
-        make ssh_upload
+        make rsync_upload
         popd
     fi
 done
