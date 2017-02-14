@@ -25,5 +25,7 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "thaw-america"
 GOOGLE_ANALYTICS = "UA-90241132-1"
 
+STATIC_PATHS += [ '.htaccess']
+
 # Faster downloads.
 PLUGINS += ['minify', 'gzip_cache' ]
