@@ -60,6 +60,7 @@ RELATIVE_URLS = True
 SLUGIFY_SOURCE = 'basename'
 
 NAVBAR_ITEMS = (( "Home", "/", "/index.html" ),
+                ( "FAQ", "/faq", "/faq"),
                 ( "Blog", "/blog", "/blog"),
                 ( "Official Communications", "/press", "/press"),
                 ( "Contact", "/contact", "/contact"),
