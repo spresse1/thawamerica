@@ -1,16 +1,24 @@
 #!/bin/bash
+
 set -e
 tempdir=$(mktemp -d)
-
+printenv
 while read refname fsha rrefname rsha
 do
-    if [[ $refname = "refs/heads/hookify" ]] ; then
-        wd=$(pwd)
-        cd ${tempdir}
-        git clone ${wd} .
-        pip install -r requirements.txt
+    if [[ $refname = "refs/heads/master" ]] ; then
+        pushd .
+        #git clone --recursive . $tempdir
+        git archive master | tar -x -C $tempdir
+        git submodule foreach --recursive \
+            'git ls-files | sed "s#^#$path/#"' | cpio -pmdv $tempdir || :
+        pip freeze > $tempdir/requirements.txt
+        cd $tempdir
+        ls
+        virtualenv .
         . bin/activate
+        pip install -r requirements.txt
         make ssh_upload
+        popd
     fi
 done
 
