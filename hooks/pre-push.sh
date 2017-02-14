@@ -4,7 +4,7 @@ tempdir=$(mktemp -d)
 
 while read refname fsha rrefname rsha
 do
-    if [[ $refname = "refs/heads/master" ]] ; then
+    if [[ $refname = "refs/heads/hookify" ]] ; then
         wd=$(pwd)
         cd ${tempdir}
         git clone ${wd} .
