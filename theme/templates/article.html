@@ -11,7 +11,10 @@
 
 {% endblock %}
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
-
+{% if article.metadata.image %}
+{% block opengraph_image %}{{ article.metadata.image }}{% endblock %}
+{% block twitter_image %}{{ article.metadata.image }}{% endblock %}
+{% endif %}
 {% block blog_content %}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
