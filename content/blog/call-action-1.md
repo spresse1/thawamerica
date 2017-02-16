@@ -2,6 +2,7 @@ Title: Tell your representatives: FISA reform is needed
 Date: February 16, 2017 00:00:00 GMT
 Category: Calls to Action
 Summary: The Supreme Court clerk's illegal rejection of our appeal makes it clear that the law describing how to appeal decisions from the nation's secret courts needs clarification.  We need your help to do this.
+Image: https://thawamerica.org/static/megaphone.png
 
 [The Supreme Court clerk's illegal rejection](/press/2017-01-17/) of our appeal makes it clear that the law describing how to appeal decisions from the nation's secret courts needs clarification.
 
