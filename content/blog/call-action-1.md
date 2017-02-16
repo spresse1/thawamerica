@@ -8,6 +8,12 @@ Image: https://thawamerica.org/static/megaphone.png
 
 We need your help to do this.
 
+## The Problem
+
+The law on who can appeal secret court decisions is muddled in critical locations.  If the government loses the case, the law provides a clear mechanism for appeal.  However, if the government wins, the law provides no clear guidance on who can appeal.  There is a legal principle which, loosely paraphrased, says that [there must always be a path for appeal](http://www.duhaime.org/LegalDictionary/U/UbiJusIbiRemedium.aspx).
+
+This is made more complicated by the secret nature of the court.  An amicus curae is usually appointed by a court when the defendant drops out of a case.  By dropping out, they give up the right to appeal.  However, in the secret court, the defendant is never present and cannot give up the right to an appeal.  This leaves the unanswered question of whether or not the amicus is granted all the rights of the defendant, including appeal.
+
 ## The Changes
 
 Our lawyers, Walsh & Walsh LLP, have sent a letter to the house and senate judiciary committees, requesting that they examine two proposed changes.
