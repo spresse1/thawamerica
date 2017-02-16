@@ -19,6 +19,7 @@
 {% block opengraph %}
 {{ super() }}
         <meta property="og:description" content="{{article.description}}" />
+        <meta property="og:url" content="{{ SITEURL }}/{{article.url}}" />
 {% endblock %}
 
 {% block blog_content %}
