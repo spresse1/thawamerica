@@ -36,3 +36,6 @@ RewriteRule ^(.*)$ $1.gz [L]
   </filesMatch>
 </ifModule>
 # END Cache-Control Headers
+<IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=300; includeSubDomains; preload" env=HTTPS
+</IfModule>
