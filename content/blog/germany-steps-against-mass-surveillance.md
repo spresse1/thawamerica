@@ -1,4 +1,4 @@
-Title: Germany takes steps against Mass Surveillance
+Title: German Court Takes Steps Against Mass Surveillance
 Date: December 16, 2017 00:00:01 GMT
 Category: Articles
 
